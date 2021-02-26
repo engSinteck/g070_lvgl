@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (9-2020-q2-update)
+# Toolchain: GNU Tools for STM32 (7-2018-q2-update)
 ################################################################################
 
 ELF_SRCS := 
@@ -22,5 +22,19 @@ OBJCOPY_BIN :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
+Driver_TFT \
 Drivers/STM32G0xx_HAL_Driver/Src \
+lvgl/examples/porting \
+lvgl/src/lv_core \
+lvgl/src/lv_draw \
+lvgl/src/lv_font \
+lvgl/src/lv_gpu \
+lvgl/src/lv_hal \
+lvgl/src/lv_misc \
+lvgl/src/lv_themes \
+lvgl/src/lv_widgets \
+lvgl/tests \
+lvgl/tests/lv_test_core \
+lvgl/tests/lv_test_fonts \
+lvgl/tests/lv_test_widgets \
 

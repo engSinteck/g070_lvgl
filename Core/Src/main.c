@@ -28,12 +28,16 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "ST7735.h"
+#include "lvgl.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+static lv_disp_buf_t disp_buf;
+static lv_color_t buf[LV_HOR_RES_MAX * 10];                     /*Declare a buffer for 10 lines*/
+uint8_t buf_tft[LV_HOR_RES_MAX*LV_VER_RES_MAX] = {0};
+//static lv_color_t buf[LV_HOR_RES_MAX * 10] __attribute__((section(".tftram"))); /* TFT Buffers */
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -97,7 +101,26 @@ int main(void)
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
 
-  /* USER CODE END 2 */
+  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+   __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_1, 2048);	// PWM_CH1 = 2048 PWM_BRILHO_TFT
+   //
+   ST7735_Init();
+   ST7735_AddrSet(0, 0, LV_HOR_RES_MAX-1, LV_VER_RES_MAX-1);
+   ST7735_Clear(0x0000);
+   ST7735_Orientation(scr_CCW);
+   ST7735_PutStr5x7(40, 10, "Hello world!", RGB565(255,255,255));
+   //
+   lv_disp_buf_init(&disp_buf, buf, NULL, LV_HOR_RES_MAX * 10);    //Initialize the display buffer
+   lv_init();
+
+   lv_disp_drv_t disp_drv;               //Descriptor of a display driver
+   lv_disp_drv_init(&disp_drv);          //Basic initialization
+   disp_drv.hor_res = LV_HOR_RES_MAX;	//Set the horizontal resolution
+   disp_drv.ver_res = LV_VER_RES_MAX;	//Set the vertical resolution
+   disp_drv.flush_cb = ST7735_Flush;	//Set your driver function
+   disp_drv.buffer = &disp_buf;          //Assign the buffer to teh display
+   lv_disp_drv_register(&disp_drv);      //Finally register the driver
+   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -106,6 +129,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  // Eventos da GUI LittleVGL
+	  lv_task_handler();
   }
   /* USER CODE END 3 */
 }
@@ -186,7 +211,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     HAL_IncTick();
   }
   /* USER CODE BEGIN Callback 1 */
-
+  if (htim->Instance == TIM6) {
+	  lv_tick_inc(1);
+  }
   /* USER CODE END Callback 1 */
 }
 

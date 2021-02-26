@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (9-2020-q2-update)
+# Toolchain: GNU Tools for STM32 (7-2018-q2-update)
 ################################################################################
 
 -include ../makefile.init
@@ -9,7 +9,21 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include lvgl/tests/lv_test_widgets/subdir.mk
+-include lvgl/tests/lv_test_fonts/subdir.mk
+-include lvgl/tests/lv_test_core/subdir.mk
+-include lvgl/tests/subdir.mk
+-include lvgl/src/lv_widgets/subdir.mk
+-include lvgl/src/lv_themes/subdir.mk
+-include lvgl/src/lv_misc/subdir.mk
+-include lvgl/src/lv_hal/subdir.mk
+-include lvgl/src/lv_gpu/subdir.mk
+-include lvgl/src/lv_font/subdir.mk
+-include lvgl/src/lv_draw/subdir.mk
+-include lvgl/src/lv_core/subdir.mk
+-include lvgl/examples/porting/subdir.mk
 -include Drivers/STM32G0xx_HAL_Driver/Src/subdir.mk
+-include Driver_TFT/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
 -include subdir.mk
