@@ -19,7 +19,7 @@ lv_btnmatrix.c:533:14:lv_btnmatrix_get_btn_text	32	static
 lv_btnmatrix.c:499:14:lv_btnmatrix_get_active_btn_text	8	static
 lv_btnmatrix.c:564:6:lv_btnmatrix_get_btn_ctrl	16	static
 lv_btnmatrix.c:1295:13:make_one_button_toggled	16	static
-lv_btnmatrix.c:841:17:lv_btnmatrix_signal	48	static
+lv_btnmatrix.c:841:17:lv_btnmatrix_signal	40	static
 lv_btnmatrix.c:420:6:lv_btnmatrix_set_one_check	16	static
 lv_btnmatrix.c:579:6:lv_btnmatrix_get_one_check	8	static
 lv_btnmatrix.c:593:18:lv_btnmatrix_get_align	8	static

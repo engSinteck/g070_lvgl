@@ -1,7 +1,7 @@
-lv_img_decoder.c:476:10:lv_img_decoder_built_in_read_line	0	static
 lv_img_decoder.c:512:6:lv_img_decoder_built_in_close	16	static
-lv_img_decoder.c:326:10:lv_img_decoder_built_in_open	8	static
-lv_img_decoder.c:270:10:lv_img_decoder_built_in_info	16	static
+lv_img_decoder.c:270:10:lv_img_decoder_built_in_info	32	static
+lv_img_decoder.c:476:10:lv_img_decoder_built_in_read_line	48	static
+lv_img_decoder.c:326:10:lv_img_decoder_built_in_open	24	static
 lv_img_decoder.c:84:10:lv_img_decoder_get_info	32	static
 lv_img_decoder.c:112:10:lv_img_decoder_open	32	static
 lv_img_decoder.c:173:10:lv_img_decoder_read_line	24	static

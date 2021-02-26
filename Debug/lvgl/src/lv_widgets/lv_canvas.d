@@ -40,6 +40,7 @@ lvgl/src/lv_widgets/lv_canvas.o: ../lvgl/src/lv_widgets/lv_canvas.c \
  ../lvgl/src/lv_widgets/../lv_draw/../lv_misc/lv_color.h \
  ../lvgl/src/lv_widgets/../lv_draw/../lv_misc/lv_area.h \
  ../lvgl/src/lv_widgets/../lv_draw/../lv_misc/lv_fs.h \
+ ../lvgl/src/lv_widgets/../lv_draw/../lv_misc/lv_mem.h \
  ../lvgl/src/lv_widgets/../lv_draw/../lv_misc/lv_types.h \
  ../lvgl/src/lv_widgets/../lv_draw/lv_draw_rect.h \
  ../lvgl/src/lv_widgets/../lv_draw/lv_draw_label.h \
@@ -166,6 +167,8 @@ c:\users\rinal\stm32cubeide\workspace_1.4.0\g070_lvgl\lvgl\src\lv_conf_internal.
 ../lvgl/src/lv_widgets/../lv_draw/../lv_misc/lv_area.h:
 
 ../lvgl/src/lv_widgets/../lv_draw/../lv_misc/lv_fs.h:
+
+../lvgl/src/lv_widgets/../lv_draw/../lv_misc/lv_mem.h:
 
 ../lvgl/src/lv_widgets/../lv_draw/../lv_misc/lv_types.h:
 

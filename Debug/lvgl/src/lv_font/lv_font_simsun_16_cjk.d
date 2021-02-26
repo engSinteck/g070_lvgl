@@ -61,6 +61,7 @@ lvgl/src/lv_font/lv_font_simsun_16_cjk.o: \
  ../lvgl/src/lv_font/../../src/lv_core/../lv_draw/../lv_conf_internal.h \
  ../lvgl/src/lv_font/../../src/lv_core/../lv_draw/lv_img_buf.h \
  ../lvgl/src/lv_font/../../src/lv_core/../lv_draw/../lv_misc/lv_fs.h \
+ ../lvgl/src/lv_font/../../src/lv_core/../lv_draw/../lv_misc/lv_mem.h \
  ../lvgl/src/lv_font/../../src/lv_core/../lv_draw/../lv_misc/lv_types.h \
  ../lvgl/src/lv_font/../../src/lv_core/lv_obj_style_dec.h \
  ../lvgl/src/lv_font/../../src/lv_core/lv_group.h \
@@ -89,7 +90,10 @@ lvgl/src/lv_font/lv_font_simsun_16_cjk.o: \
  ../lvgl/src/lv_font/../../src/lv_widgets/../lv_core/lv_obj.h \
  ../lvgl/src/lv_font/../../src/lv_widgets/../lv_core/lv_indev.h \
  ../lvgl/src/lv_font/../../src/lv_widgets/lv_imgbtn.h \
+ ../lvgl/src/lv_font/../../src/lv_widgets/lv_btn.h \
+ ../lvgl/src/lv_font/../../src/lv_widgets/../lv_draw/lv_draw_img.h \
  ../lvgl/src/lv_font/../../src/lv_widgets/lv_img.h \
+ ../lvgl/src/lv_font/../../src/lv_widgets/../lv_misc/lv_fs.h \
  ../lvgl/src/lv_font/../../src/lv_widgets/lv_label.h \
  ../lvgl/src/lv_font/../../src/lv_widgets/../lv_font/lv_font.h \
  ../lvgl/src/lv_font/../../src/lv_widgets/../lv_font/lv_symbol_def.h \
@@ -107,6 +111,7 @@ lvgl/src/lv_font/lv_font_simsun_16_cjk.o: \
  ../lvgl/src/lv_font/../../src/lv_widgets/../lv_draw/lv_draw_arc.h \
  ../lvgl/src/lv_font/../../src/lv_widgets/../lv_draw/lv_draw_blend.h \
  ../lvgl/src/lv_font/../../src/lv_widgets/../lv_draw/lv_draw_mask.h \
+ ../lvgl/src/lv_font/../../src/lv_widgets/lv_label.h \
  ../lvgl/src/lv_font/../../src/lv_widgets/lv_line.h \
  ../lvgl/src/lv_font/../../src/lv_widgets/lv_page.h \
  ../lvgl/src/lv_font/../../src/lv_widgets/lv_cont.h \
@@ -117,8 +122,6 @@ lvgl/src/lv_font/lv_font_simsun_16_cjk.o: \
  ../lvgl/src/lv_font/../../src/lv_widgets/lv_cpicker.h \
  ../lvgl/src/lv_font/../../src/lv_widgets/lv_bar.h \
  ../lvgl/src/lv_font/../../src/lv_widgets/../lv_misc/lv_anim.h \
- ../lvgl/src/lv_font/../../src/lv_widgets/lv_btn.h \
- ../lvgl/src/lv_font/../../src/lv_widgets/lv_label.h \
  ../lvgl/src/lv_font/../../src/lv_widgets/lv_slider.h \
  ../lvgl/src/lv_font/../../src/lv_widgets/lv_led.h \
  ../lvgl/src/lv_font/../../src/lv_widgets/lv_btnmatrix.h \
@@ -267,6 +270,8 @@ lvgl/src/lv_font/lv_font_simsun_16_cjk.o: \
 
 ../lvgl/src/lv_font/../../src/lv_core/../lv_draw/../lv_misc/lv_fs.h:
 
+../lvgl/src/lv_font/../../src/lv_core/../lv_draw/../lv_misc/lv_mem.h:
+
 ../lvgl/src/lv_font/../../src/lv_core/../lv_draw/../lv_misc/lv_types.h:
 
 ../lvgl/src/lv_font/../../src/lv_core/lv_obj_style_dec.h:
@@ -323,7 +328,13 @@ lvgl/src/lv_font/lv_font_simsun_16_cjk.o: \
 
 ../lvgl/src/lv_font/../../src/lv_widgets/lv_imgbtn.h:
 
+../lvgl/src/lv_font/../../src/lv_widgets/lv_btn.h:
+
+../lvgl/src/lv_font/../../src/lv_widgets/../lv_draw/lv_draw_img.h:
+
 ../lvgl/src/lv_font/../../src/lv_widgets/lv_img.h:
+
+../lvgl/src/lv_font/../../src/lv_widgets/../lv_misc/lv_fs.h:
 
 ../lvgl/src/lv_font/../../src/lv_widgets/lv_label.h:
 
@@ -359,6 +370,8 @@ lvgl/src/lv_font/lv_font_simsun_16_cjk.o: \
 
 ../lvgl/src/lv_font/../../src/lv_widgets/../lv_draw/lv_draw_mask.h:
 
+../lvgl/src/lv_font/../../src/lv_widgets/lv_label.h:
+
 ../lvgl/src/lv_font/../../src/lv_widgets/lv_line.h:
 
 ../lvgl/src/lv_font/../../src/lv_widgets/lv_page.h:
@@ -378,10 +391,6 @@ lvgl/src/lv_font/lv_font_simsun_16_cjk.o: \
 ../lvgl/src/lv_font/../../src/lv_widgets/lv_bar.h:
 
 ../lvgl/src/lv_font/../../src/lv_widgets/../lv_misc/lv_anim.h:
-
-../lvgl/src/lv_font/../../src/lv_widgets/lv_btn.h:
-
-../lvgl/src/lv_font/../../src/lv_widgets/lv_label.h:
 
 ../lvgl/src/lv_font/../../src/lv_widgets/lv_slider.h:
 

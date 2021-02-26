@@ -60,6 +60,7 @@ lvgl/tests/lv_test_assert.o: ../lvgl/tests/lv_test_assert.c \
  ../lvgl/tests/../src/lv_core/../lv_draw/../lv_conf_internal.h \
  ../lvgl/tests/../src/lv_core/../lv_draw/lv_img_buf.h \
  ../lvgl/tests/../src/lv_core/../lv_draw/../lv_misc/lv_fs.h \
+ ../lvgl/tests/../src/lv_core/../lv_draw/../lv_misc/lv_mem.h \
  ../lvgl/tests/../src/lv_core/../lv_draw/../lv_misc/lv_types.h \
  ../lvgl/tests/../src/lv_core/lv_obj_style_dec.h \
  ../lvgl/tests/../src/lv_core/lv_group.h \
@@ -88,7 +89,10 @@ lvgl/tests/lv_test_assert.o: ../lvgl/tests/lv_test_assert.c \
  ../lvgl/tests/../src/lv_widgets/../lv_core/lv_obj.h \
  ../lvgl/tests/../src/lv_widgets/../lv_core/lv_indev.h \
  ../lvgl/tests/../src/lv_widgets/lv_imgbtn.h \
+ ../lvgl/tests/../src/lv_widgets/lv_btn.h \
+ ../lvgl/tests/../src/lv_widgets/../lv_draw/lv_draw_img.h \
  ../lvgl/tests/../src/lv_widgets/lv_img.h \
+ ../lvgl/tests/../src/lv_widgets/../lv_misc/lv_fs.h \
  ../lvgl/tests/../src/lv_widgets/lv_label.h \
  ../lvgl/tests/../src/lv_widgets/../lv_font/lv_font.h \
  ../lvgl/tests/../src/lv_widgets/../lv_font/lv_symbol_def.h \
@@ -106,6 +110,7 @@ lvgl/tests/lv_test_assert.o: ../lvgl/tests/lv_test_assert.c \
  ../lvgl/tests/../src/lv_widgets/../lv_draw/lv_draw_arc.h \
  ../lvgl/tests/../src/lv_widgets/../lv_draw/lv_draw_blend.h \
  ../lvgl/tests/../src/lv_widgets/../lv_draw/lv_draw_mask.h \
+ ../lvgl/tests/../src/lv_widgets/lv_label.h \
  ../lvgl/tests/../src/lv_widgets/lv_line.h \
  ../lvgl/tests/../src/lv_widgets/lv_page.h \
  ../lvgl/tests/../src/lv_widgets/lv_cont.h \
@@ -116,8 +121,6 @@ lvgl/tests/lv_test_assert.o: ../lvgl/tests/lv_test_assert.c \
  ../lvgl/tests/../src/lv_widgets/lv_cpicker.h \
  ../lvgl/tests/../src/lv_widgets/lv_bar.h \
  ../lvgl/tests/../src/lv_widgets/../lv_misc/lv_anim.h \
- ../lvgl/tests/../src/lv_widgets/lv_btn.h \
- ../lvgl/tests/../src/lv_widgets/lv_label.h \
  ../lvgl/tests/../src/lv_widgets/lv_slider.h \
  ../lvgl/tests/../src/lv_widgets/lv_led.h \
  ../lvgl/tests/../src/lv_widgets/lv_btnmatrix.h \
@@ -267,6 +270,8 @@ lvgl/tests/lv_test_assert.o: ../lvgl/tests/lv_test_assert.c \
 
 ../lvgl/tests/../src/lv_core/../lv_draw/../lv_misc/lv_fs.h:
 
+../lvgl/tests/../src/lv_core/../lv_draw/../lv_misc/lv_mem.h:
+
 ../lvgl/tests/../src/lv_core/../lv_draw/../lv_misc/lv_types.h:
 
 ../lvgl/tests/../src/lv_core/lv_obj_style_dec.h:
@@ -323,7 +328,13 @@ lvgl/tests/lv_test_assert.o: ../lvgl/tests/lv_test_assert.c \
 
 ../lvgl/tests/../src/lv_widgets/lv_imgbtn.h:
 
+../lvgl/tests/../src/lv_widgets/lv_btn.h:
+
+../lvgl/tests/../src/lv_widgets/../lv_draw/lv_draw_img.h:
+
 ../lvgl/tests/../src/lv_widgets/lv_img.h:
+
+../lvgl/tests/../src/lv_widgets/../lv_misc/lv_fs.h:
 
 ../lvgl/tests/../src/lv_widgets/lv_label.h:
 
@@ -359,6 +370,8 @@ lvgl/tests/lv_test_assert.o: ../lvgl/tests/lv_test_assert.c \
 
 ../lvgl/tests/../src/lv_widgets/../lv_draw/lv_draw_mask.h:
 
+../lvgl/tests/../src/lv_widgets/lv_label.h:
+
 ../lvgl/tests/../src/lv_widgets/lv_line.h:
 
 ../lvgl/tests/../src/lv_widgets/lv_page.h:
@@ -378,10 +391,6 @@ lvgl/tests/lv_test_assert.o: ../lvgl/tests/lv_test_assert.c \
 ../lvgl/tests/../src/lv_widgets/lv_bar.h:
 
 ../lvgl/tests/../src/lv_widgets/../lv_misc/lv_anim.h:
-
-../lvgl/tests/../src/lv_widgets/lv_btn.h:
-
-../lvgl/tests/../src/lv_widgets/lv_label.h:
 
 ../lvgl/tests/../src/lv_widgets/lv_slider.h:
 

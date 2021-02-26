@@ -90,6 +90,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../lvgl/src/lv_core/../lv_draw/../lv_conf_internal.h \
  ../lvgl/src/lv_core/../lv_draw/lv_img_buf.h \
  ../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_fs.h \
+ ../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_mem.h \
  ../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_types.h \
  ../lvgl/src/lv_core/lv_obj_style_dec.h ../lvgl/src/lv_core/lv_group.h \
  ../lvgl/src/lv_core/lv_obj.h ../lvgl/src/lv_core/lv_indev.h \
@@ -110,7 +111,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../lvgl/src/lv_widgets/lv_cont.h \
  ../lvgl/src/lv_widgets/../lv_core/lv_obj.h \
  ../lvgl/src/lv_widgets/../lv_core/lv_indev.h \
- ../lvgl/src/lv_widgets/lv_imgbtn.h ../lvgl/src/lv_widgets/lv_img.h \
+ ../lvgl/src/lv_widgets/lv_imgbtn.h ../lvgl/src/lv_widgets/lv_btn.h \
+ ../lvgl/src/lv_widgets/../lv_draw/lv_draw_img.h \
+ ../lvgl/src/lv_widgets/lv_img.h \
+ ../lvgl/src/lv_widgets/../lv_misc/lv_fs.h \
  ../lvgl/src/lv_widgets/lv_label.h \
  ../lvgl/src/lv_widgets/../lv_font/lv_font.h \
  ../lvgl/src/lv_widgets/../lv_font/lv_symbol_def.h \
@@ -128,13 +132,12 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../lvgl/src/lv_widgets/../lv_draw/lv_draw_arc.h \
  ../lvgl/src/lv_widgets/../lv_draw/lv_draw_blend.h \
  ../lvgl/src/lv_widgets/../lv_draw/lv_draw_mask.h \
- ../lvgl/src/lv_widgets/lv_line.h ../lvgl/src/lv_widgets/lv_page.h \
- ../lvgl/src/lv_widgets/lv_cont.h ../lvgl/src/lv_widgets/lv_list.h \
- ../lvgl/src/lv_widgets/lv_chart.h ../lvgl/src/lv_widgets/lv_table.h \
- ../lvgl/src/lv_widgets/lv_checkbox.h ../lvgl/src/lv_widgets/lv_cpicker.h \
- ../lvgl/src/lv_widgets/lv_bar.h \
+ ../lvgl/src/lv_widgets/lv_label.h ../lvgl/src/lv_widgets/lv_line.h \
+ ../lvgl/src/lv_widgets/lv_page.h ../lvgl/src/lv_widgets/lv_cont.h \
+ ../lvgl/src/lv_widgets/lv_list.h ../lvgl/src/lv_widgets/lv_chart.h \
+ ../lvgl/src/lv_widgets/lv_table.h ../lvgl/src/lv_widgets/lv_checkbox.h \
+ ../lvgl/src/lv_widgets/lv_cpicker.h ../lvgl/src/lv_widgets/lv_bar.h \
  ../lvgl/src/lv_widgets/../lv_misc/lv_anim.h \
- ../lvgl/src/lv_widgets/lv_btn.h ../lvgl/src/lv_widgets/lv_label.h \
  ../lvgl/src/lv_widgets/lv_slider.h ../lvgl/src/lv_widgets/lv_led.h \
  ../lvgl/src/lv_widgets/lv_btnmatrix.h \
  ../lvgl/src/lv_widgets/lv_keyboard.h \
@@ -365,6 +368,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 
 ../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_fs.h:
 
+../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_mem.h:
+
 ../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_types.h:
 
 ../lvgl/src/lv_core/lv_obj_style_dec.h:
@@ -421,7 +426,13 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 
 ../lvgl/src/lv_widgets/lv_imgbtn.h:
 
+../lvgl/src/lv_widgets/lv_btn.h:
+
+../lvgl/src/lv_widgets/../lv_draw/lv_draw_img.h:
+
 ../lvgl/src/lv_widgets/lv_img.h:
+
+../lvgl/src/lv_widgets/../lv_misc/lv_fs.h:
 
 ../lvgl/src/lv_widgets/lv_label.h:
 
@@ -457,6 +468,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 
 ../lvgl/src/lv_widgets/../lv_draw/lv_draw_mask.h:
 
+../lvgl/src/lv_widgets/lv_label.h:
+
 ../lvgl/src/lv_widgets/lv_line.h:
 
 ../lvgl/src/lv_widgets/lv_page.h:
@@ -476,10 +489,6 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../lvgl/src/lv_widgets/lv_bar.h:
 
 ../lvgl/src/lv_widgets/../lv_misc/lv_anim.h:
-
-../lvgl/src/lv_widgets/lv_btn.h:
-
-../lvgl/src/lv_widgets/lv_label.h:
 
 ../lvgl/src/lv_widgets/lv_slider.h:
 

@@ -23,6 +23,7 @@ lvgl/src/lv_draw/lv_draw_mask.o: ../lvgl/src/lv_draw/lv_draw_mask.c \
  ../lvgl/src/lv_draw/../lv_misc/../lv_draw/../lv_misc/lv_area.h \
  ../lvgl/src/lv_draw/../lv_misc/../lv_draw/../lv_misc/lv_fs.h \
  ../lvgl/src/lv_draw/../lv_misc/../lv_draw/../lv_misc/../lv_conf_internal.h \
+ ../lvgl/src/lv_draw/../lv_misc/../lv_draw/../lv_misc/lv_mem.h \
  ../lvgl/src/lv_draw/../lv_misc/../lv_draw/../lv_misc/lv_types.h \
  ../lvgl/src/lv_draw/../lv_misc/../lv_draw/lv_draw_mask.h
 
@@ -73,6 +74,8 @@ lvgl/src/lv_draw/lv_draw_mask.o: ../lvgl/src/lv_draw/lv_draw_mask.c \
 ../lvgl/src/lv_draw/../lv_misc/../lv_draw/../lv_misc/lv_fs.h:
 
 ../lvgl/src/lv_draw/../lv_misc/../lv_draw/../lv_misc/../lv_conf_internal.h:
+
+../lvgl/src/lv_draw/../lv_misc/../lv_draw/../lv_misc/lv_mem.h:
 
 ../lvgl/src/lv_draw/../lv_misc/../lv_draw/../lv_misc/lv_types.h:
 

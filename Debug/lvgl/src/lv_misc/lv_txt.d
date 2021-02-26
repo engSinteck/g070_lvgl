@@ -32,6 +32,7 @@ lvgl/src/lv_misc/lv_txt.o: ../lvgl/src/lv_misc/lv_txt.c \
  ../lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_area.h \
  ../lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_fs.h \
  ../lvgl/src/lv_misc/../lv_draw/../lv_misc/../lv_conf_internal.h \
+ ../lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_mem.h \
  ../lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_types.h \
  ../lvgl/src/lv_misc/../lv_draw/lv_draw_rect.h \
  ../lvgl/src/lv_misc/../lv_draw/lv_draw_label.h \
@@ -119,6 +120,8 @@ lvgl/src/lv_misc/lv_txt.o: ../lvgl/src/lv_misc/lv_txt.c \
 ../lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_fs.h:
 
 ../lvgl/src/lv_misc/../lv_draw/../lv_misc/../lv_conf_internal.h:
+
+../lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_mem.h:
 
 ../lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_types.h:
 

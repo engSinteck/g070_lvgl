@@ -70,7 +70,7 @@
 typedef int16_t lv_coord_t;
 
 /* Maximum buffer size to allocate for rotation. Only used if software rotation is enabled. */
-#define LV_DISP_ROT_MAX_BUF  (4U * 1024U)
+#define LV_DISP_ROT_MAX_BUF  (2U * 1024U)
 
 /*=========================
    Memory manager settings
@@ -83,7 +83,7 @@ typedef int16_t lv_coord_t;
 #define LV_MEM_CUSTOM      0
 #if LV_MEM_CUSTOM == 0
 /* Size of the memory used by `lv_mem_alloc` in bytes (>= 2kB)*/
-#  define LV_MEM_SIZE    (4U * 1024U)
+#  define LV_MEM_SIZE    (2U * 1024U)
 
 /* Compiler prefix for a big array declaration */
 #  define LV_MEM_ATTR
@@ -173,7 +173,7 @@ typedef void * lv_anim_user_data_t;
 #define LV_USE_PATTERN  0
 
 /*1: enable value string drawing on rectangles*/
-#define LV_USE_VALUE_STR    0
+#define LV_USE_VALUE_STR    1
 
 /* 1: Use other blend modes than normal (`LV_BLEND_MODE_...`)*/
 #define LV_USE_BLEND_MODES      0
@@ -185,7 +185,7 @@ typedef void * lv_anim_user_data_t;
 #define LV_USE_IMG_TRANSFORM    0
 
 /* 1: Enable object groups (for keyboard/encoder navigation) */
-#define LV_USE_GROUP            1
+#define LV_USE_GROUP            0
 #if LV_USE_GROUP
 typedef void * lv_group_user_data_t;
 #endif  /*LV_USE_GROUP*/
@@ -211,7 +211,7 @@ e.g. "stm32f769xx.h" or "stm32f429xx.h" */
 #define LV_USE_GPU_NXP_VG_LITE   0
 
 /* 1: Enable file system (might be required for images */
-#define LV_USE_FILESYSTEM       0
+#define LV_USE_FILESYSTEM       1
 #if LV_USE_FILESYSTEM
 /*Declare the type of the user data of file system drivers (can be e.g. `void *`, `int`, `struct`)*/
 typedef void * lv_fs_drv_user_data_t;
@@ -224,8 +224,8 @@ typedef void * lv_fs_drv_user_data_t;
 #define LV_USE_PERF_MONITOR     0
 
 /*1: Use the functions and types from the older API if possible */
-#define LV_USE_API_EXTENSION_V6  1
-#define LV_USE_API_EXTENSION_V7  1
+#define LV_USE_API_EXTENSION_V6  0
+#define LV_USE_API_EXTENSION_V7  0
 
 /*========================
  * Image decoder and cache
@@ -559,7 +559,7 @@ typedef void * lv_obj_user_data_t;
 #endif
 
 /*1: enable `lv_obj_realign()` based on `lv_obj_align()` parameters*/
-#define LV_USE_OBJ_REALIGN          1
+#define LV_USE_OBJ_REALIGN          0
 
 /* Enable to make the object clickable on a larger area.
  * LV_EXT_CLICK_AREA_OFF or 0: Disable this feature
@@ -622,10 +622,10 @@ typedef void * lv_obj_user_data_t;
 #define LV_USE_GAUGE    0
 
 /*Image (dependencies: lv_label*/
-#define LV_USE_IMG      0
+#define LV_USE_IMG      1
 
 /*Image Button (dependencies: lv_btn*/
-#define LV_USE_IMGBTN   0
+#define LV_USE_IMGBTN   1
 #if LV_USE_IMGBTN
 /*1: The imgbtn requires left, mid and right parts and the width can be set freely*/
 #  define LV_IMGBTN_TILED 0

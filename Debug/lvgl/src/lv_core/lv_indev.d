@@ -52,6 +52,7 @@ lvgl/src/lv_core/lv_indev.o: ../lvgl/src/lv_core/lv_indev.c \
  ../lvgl/src/lv_core/../lv_draw/../lv_conf_internal.h \
  ../lvgl/src/lv_core/../lv_draw/lv_img_buf.h \
  ../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_fs.h \
+ ../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_mem.h \
  ../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_types.h \
  ../lvgl/src/lv_core/lv_obj_style_dec.h \
  ../lvgl/src/lv_core/../lv_hal/lv_hal_indev.h \
@@ -171,6 +172,8 @@ lvgl/src/lv_core/lv_indev.o: ../lvgl/src/lv_core/lv_indev.c \
 ../lvgl/src/lv_core/../lv_draw/lv_img_buf.h:
 
 ../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_fs.h:
+
+../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_mem.h:
 
 ../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_types.h:
 
